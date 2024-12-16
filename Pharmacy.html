@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharmacy</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+</head>
+<body>
+  <header>
+    <div class="ml">
+        <img src="images/logo.jpg" alt="logo" width="100">
+    </div>
+    <div class="mh">
+        <h1>LIFE CARE HOSPITALS</h1>
+        <p>Your Wellness Our Responsibility</p>
+    </div>
+    <div class="search-bar">
+        <div class="search">
+            <form action="">
+                <input type="text" placeholder="Search">
+                <button type="button">
+                    <img src="images/search.jpg" alt="search" width="30" height="15">
+                </button>
+            </form>
+        </div>
+    </div>
+</header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="About_us.html">About us</a>
+        <a href="Services.html">Services</a>
+        <a href="Doctors.html">Doctors</a>
+        <a href="Consulting_reservation.html">Consulting reservation</a>
+        <a href="Pharmacy.html">Pharmacy</a>
+    </nav>
+        <h3>Buy your Medicine</h3>
+        <div class="on">
+            <img src="images/Pharmacy_image.png" alt="pharmacy" width="100%" height="300">
+        </div>
+    <main>
+        <section class="section4">
+            <h2>Our Medicines</h2>
+            <div class="category" id="analgesics">
+              <h4>Analgesics</h4>
+              <div class="products">
+                <div class="product">
+                  <img src="images/Paracetamol.jpg" alt="Paracetamol" width="200" height="300">
+                  <p>A 500mg tablet - Rs. 58.03</p>
+                  <label for="quantity-paracetamol">Quantity:</label>
+                  <input type="number" id="quantity-paracetamol" min="1" value="1">
+                  <br>
+                  <button onclick="addToCart('Paracetamol 500mg', 58.03, document.getElementById('quantity-paracetamol').value)">Add to Cart</button>
+                </div>
+                <div class="product">
+                  <img src="images/Ibuprofen.jpg" alt="Ibuprofen" width="200" height="300">
+                  <p>A 200mg tablet - Rs. 72.54</p>
+                  <label for="quantity-ibuprofen">Quantity:</label>
+                  <input type="number" id="quantity-ibuprofen" min="1" value="1">
+                  <br>
+                  <button onclick="addToCart('Ibuprofen 200mg', 72.54, document.getElementById('quantity-ibuprofen').value)">Add to Cart</button>
+                </div>
+                <div class="product">
+                  <img src="images/Aspirin.webp" alt="Aspirin" width="200" height="300">
+                  <p>A 325mg tablet - Rs. 43.52</p>
+                  <label for="quantity-aspirin">Quantity:</label>
+                  <input type="number" id="quantity-aspirin" min="1" value="1">
+                  <br>
+                  <button onclick="addToCart('Aspirin 325mg', 43.52, document.getElementById('quantity-aspirin').value)">Add to Cart</button>
+                </div>
+                <div class="product">
+                  <img src="images/Diclofenac.jpg" alt="Diclofenac" width="200" height="300">
+                  <p>A 50mg tablet - Rs. 87.05</p>
+                  <label for="quantity-diclofenac">Quantity:</label>
+                  <input type="number" id="quantity-diclofenac" min="1" value="1">
+                  <br>
+                  <button onclick="addToCart('Diclofenac 50mg', 87.05, document.getElementById('quantity-aspirin').value)">Add to Cart</button>
+                </div>
+                <div class="product">
+                  <img src="images/Naproxen.webp" alt="Naproxen" width="200" height="300">
+                  <p>A 250mg tablet - Rs. 101.56</p>
+                  <label for="quantity-naproxen">Quantity:</label>
+                  <input type="number" id="quantity-naproxen" min="1" value="1">
+                  <br>
+                  <button onclick="addToCart('Naproxen 250mg', 101.56, document.getElementById('quantity-naproxen').value)">Add to Cart</button>
+                </div>
+                <div class="product">
+                  <img src="images/Tramadol.jpg" alt="Tramadol" width="200" height="300">
+                  <p>A 50mg tablet - Rs. 145.08</p>
+                  <label for="quantity-tramadol">Quantity:</label>
+                  <input type="number" id="quantity-tramadol" min="1" value="1">
+                  <br>
+                  <button onclick="addToCart('Tramadol 50mg', 145.08, document.getElementById('quantity-tramadol').value)">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+            <div class="category" id="antibiotics">
+              <h4>Antibiotics</h4>
+              <div class="products">
+                <div class="product">
+                  <img src="images/Amoxicillin.jpg" alt="Amoxicillin" width="200" height="300">
+                  <p>A 500mg tablet - Rs. 116.06</p>
+                  <label for="quantity-amoxicillin">Quantity:</label>
+                  <input type="number" id="quantity-amoxicillin" min="1" value="1">
+                  <br>
+                  <button onclick="addToCart('Amoxicillin 500mg', 116.06, document.getElementById('quantity-amoxicillin').value)">Add to Cart</button>
+                </div>
+                <div class="product">
+                  <img src="images/Ciprofloxacin.jpg" alt="Ciprofloxacin" width="200" height="300">
+                  <p>A 250mg tablet - Rs. 145.08</p>
+                  <label for="quantity-ciprofloxacin">Quantity:</label>
+                  <input type="number" id="quantity-ciprofloxacin" min="1" value="1">
+                  <br>
+                  <button onclick="addToCart('Ciprofloxacin 250mg', 145.08, document.getElementById('quantity-ciprofloxacin').value)">Add to Cart</button>
+                </div>
+                <div class="product">
+                  <img src="images/Azithromycin.jpg" alt="Azithromycin" width="200" height="300">
+                  <p>A 250mg tablet - Rs. 174.10</p>
+                  <label for="quantity-azithromycin">Quantity:</label>
+                  <input type="number" id="quantity-azithromycin" min="1" value="1">
+                  <br>
+                  <button onclick="addToCart('Azithromycin 250mg', 174.10, document.getElementById('quantity-azithromycin').value)">Add to Cart</button>
+                </div>
+                <div class="product">
+                  <img src="images/Doxycycline.jpg" alt="Doxycycline" width="200" height="300">
+                  <p>A 100mg tablet - Rs. 130.57</p>
+                  <label for="quantity-doxycycline">Quantity:</label>
+                  <input type="number" id="quantity-doxycycline" min="1" value="1">
+                  <br>
+                  <button onclick="addToCart('Doxycycline 100mg', 130.57, document.getElementById('quantity-doxycycline').value)">Add to Cart</button>
+                </div>
+                <div class="product">
+                  <img src="images/Cephalexin.jpg" alt="Cephalexin" width="200" height="300">
+                  <p>A 500mg tablet - Rs. 159.59</p>
+                  <label for="quantity-cephalexin">Quantity:</label>
+                  <input type="number" id="quantity-cephalexin" min="1" value="1">
+                  <br>
+                  <button onclick="addToCart('Cephalexin 500mg', 159.59, document.getElementById('quantity-cephalexin').value)">Add to Cart</button>
+                </div>
+                <div class="product">
+                  <img src="images/Metronidazole.jpg" alt="Metronidazole" width="200" height="300">
+                  <p>A 400mg tablet - Rs. 101.56</p>
+                  <label for="quantity-metronidazole">Quantity:</label>
+                  <input type="number" id="quantity-metronidazole" min="1" value="1">
+                  <br>
+                  <button onclick="addToCart('Metronidazole 400mg', 101.56, document.getElementById('quantity-metronidazole').value)">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+            <div class="category" id="antidepressants">
+              <h4>Antidepressants</h4>
+              <div class="products">
+                <div class="product">
+                  <img src="images/Fluoxetine.jpg" alt="Fluoxetine" width="200" height="300">
+                  <p>A 20mg tablet - Rs. 203.11</p>
+                  <label for="quantity-fluoxetine">Quantity:</label>
+                  <input type="number" id="quantity-fluoxetine" min="1" value="1">
+                  <br>
+                  <button onclick="addToCart('Fluoxetine 20mg', 203.11, document.getElementById('quantity-fluoxetine').value)">Add to Cart</button>
+                </div>
+                <div class="product">
+                  <img src="images/Sertraline.webp" alt="Sertraline" width="200" height="300">
+                  <p>A 50mg tablet - Rs. 188.60</p>
+                  <label for="quantity-sertraline">Quantity:</label>
+                  <input type="number" id="quantity-sertraline" min="1" value="1">
+                  <br>
+                  <button onclick="addToCart('Sertraline 50mg', 188.60, document.getElementById('quantity-sertraline').value)">Add to Cart</button>
+                </div>
+                <div class="product">
+                  <img src="images/Escitalopram.jpeg" alt="Escitalopram" width="200" height="300">
+                  <p>A 10mg tablet - Rs. 232.13</p>
+                  <label for="quantity-escitalopram">Quantity:</label>
+                  <input type="number" id="quantity-escitalopram" min="1" value="1">
+                  <br>
+                  <button onclick="addToCart('Escitalopram 10mg', 232.13, document.getElementById('quantity-escitalopram').value)">Add to Cart</button>
+                </div>
+                <div class="product">
+                  <img src="images/Amitriptyline.jpg" alt="Amitriptyline" width="200" height="300">
+                  <p>A 25mg tablet - Rs. 145.08</p>
+                  <label for="quantity-amitriptyline">Quantity:</label>
+                  <input type="number" id="quantity-amitriptyline" min="1" value="1">
+                  <br>
+                  <button onclick="addToCart('Amitriptyline 25mg', 145.08, document.getElementById('quantity-amitriptyline').value)">Add to Cart</button>
+                </div>
+                <div class="product">
+                  <img src="images/Duloxetine.jpg" alt="Duloxetine" width="200" height="300">
+                  <p>A 30mg tablet - Rs. 246.64</p>
+                  <label for="quantity-duloxetine">Quantity:</label>
+                  <input type="number" id="quantity-duloxetine" min="1" value="1">
+                  <br>
+                  <button onclick="addToCart('Duloxetine 30mg', 246.64, document.getElementById('quantity-duloxetine').value)">Add to Cart</button>
+                </div>
+                <div class="product">
+                  <img src="images/Venlafaxine.png" alt="Venlafaxine" width="200" height="300">
+                  <p>A 75mg tablet - Rs. 261.14</p>
+                  <label for="quantity-venlafaxine">Quantity:</label>
+                  <input type="number" id="quantity-venlafaxine" min="1" value="1">
+                  <br>
+                  <button onclick="addToCart('Venlafaxine 75mg', 261.14, document.getElementById('quantity-venlafaxine').value)">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+            <div class="category" id="antihistamines">
+              <h4>Antihistamines</h4>
+              <div class="products">
+                <div class="product">
+                  <img src="images/Cetirizine.webp" alt="Cetirizine" width="200" height="300">
+                  <p>A 10mg tablet - Rs. 58.03</p>
+                  <label for="quantity-cetirizine">Quantity:</label>
+                  <input type="number" id="quantity-cetirizine" min="1" value="1">
+                  <br>
+                  <button onclick="addToCart('Cetirizine 10mg', 58.03, document.getElementById('quantity-cetirizine').value)">Add to Cart</button>
+                </div>
+                <div class="product">
+                  <img src="images/Loratadine.jpg" alt="Loratadine" width="200" height="300">
+                  <p>A 10mg tablet - Rs. 72.54</p>
+                  <label for="quantity-loratadine">Quantity:</label>
+                  <input type="number" id="quantity-loratadine" min="1" value="1">
+                  <br>
+                  <button onclick="addToCart('Loratadine 10mg', 72.54, document.getElementById('quantity-loratadine').value)">Add to Cart</button>
+                </div>
+                <div class="product">
+                  <img src="images/Fexofenadine.jpg" alt="Fexofenadine" width="200" height="300">
+                  <p>A 180mg tablet - Rs. 87.05</p>
+                  <label for="quantity-fexofenadine">Quantity:</label>
+                  <input type="number" id="quantity-fexofenadine" min="1" value="1">
+                  <br>
+                  <button onclick="addToCart('Fexofenadine 180mg', 87.05, document.getElementById('quantity-fexofenadine').value)">Add to Cart</button>
+                </div>
+                <div class="product">
+                  <img src="images/Diphenhydramine.jpg" alt="Diphenhydramine" width="200" height="300">
+                  <p>A 25mg tablet - Rs. 43.52</p>
+                  <label for="quantity-diphenhydramine">Quantity:</label>
+                  <input type="number" id="quantity-diphenhydramine" min="1" value="1">
+                  <br>
+                  <button onclick="addToCart('Diphenhydramine 25mg', 43.52, document.getElementById('quantity-diphenhydramine').value)">Add to Cart</button>
+                </div>
+                <div class="product">
+                  <img src="images/Chlorpheniramine.webp" alt="Chlorpheniramine" width="200" height="300">
+                  <p>A tablet - Rs. 52.23</p>
+                  <label for="quantity-chlorpheniramine">Quantity:</label>
+                  <input type="number" id="quantity-chlorpheniramine" min="1" value="1">
+                  <br>
+                  <button onclick="addToCart('Chlorpheniramine', 52.23, document.getElementById('quantity-chlorpheniramine').value)">Add to Cart</button>
+                </div>
+                <div class="product">
+                  <img src="images/Desloratadine.jpg" alt="Desloratadine" width="200" height="300">
+                  <p>A tablet - Rs. 63.84</p>
+                  <label for="quantity-desloratadine">Quantity:</label>
+                  <input type="number" id="quantity-desloratadine" min="1" value="1">
+                  <br>
+                  <button onclick="addToCart('Desloratadine', 63.84, document.getElementById('quantity-desloratadine').value)">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+            <div class="category" id="antihypertensives">
+              <h4>Antihypertensives</h4>
+              <div class="products">
+                <div class="product">
+                  <img src="images/Amlodipine.jpeg" alt="Amlodipine" width="200" height="300">
+                  <p>A tablet - Rs. 116.06</p>
+                  <label for="quantity-amlodipine">Quantity:</label>
+                  <input type="number" id="quantity-amlodipine" min="1" value="1">
+                  <br>
+                  <button onclick="addToCart('Amlodipine', 116.06, document.getElementById('quantity-amlodipine').value)">Add to Cart</button>
+                </div>
+                <div class="product">
+                  <img src="images/Lisinopril.jpeg" alt="Lisinopril" width="200" height="300">
+                  <p>A 10mg tablet - Rs. 130.57</p>
+                  <label for="quantity-lisinopril">Quantity:</label>
+                  <input type="number" id="quantity-lisinopril" min="1" value="1">
+                  <br>
+                  <button onclick="addToCart('Lisinopril 10mg', 130.57, document.getElementById('quantity-lisinopril').value)">Add to Cart</button>
+                </div>
+                <div class="product">
+                  <img src="images/Losartan.jpeg" alt="Losartan" width="200" height="300">
+                  <p>A 50mg tablet - Rs. 101.56</p>
+                  <label for="quantity-losartan">Quantity:</label>
+                  <input type="number" id="quantity-losartan" min="1" value="1">
+                  <br>
+                  <button onclick="addToCart('Losartan 50mg', 101.56, document.getElementById('quantity-losartan').value)">Add to Cart</button>
+                </div>
+                <div class="product">
+                  <img src="images/Metoprolol.webp" alt="Metoprolol" width="200" height="300">
+                  <p>A 50mg tablet - Rs. 145.08</p>
+                  <label for="quantity-metoprolol">Quantity:</label>
+                  <input type="number" id="quantity-metoprolol" min="1" value="1">
+                  <br>
+                  <button onclick="addToCart('Metoprolol 50mg', 145.08, document.getElementById('quantity-metoprolol').value)">Add to Cart</button>
+                </div>
+                <div class="product">
+                  <img src="images/Hydrochlorothiazide.jpeg" alt="Hydrochlorothiazide" width="200" height="300">
+                  <p>A 25mg tablet - Rs. 72.54</p>
+                  <label for="quantity-hydrochlorothiazide">Quantity:</label>
+                  <input type="number" id="quantity-hydrochlorothiazide" min="1" value="1">
+                  <br>
+                  <button onclick="addToCart('Hydrochlorothiazide 25mg', 72.54, document.getElementById('quantity-hydrochlorothiazide').value)">Add to Cart</button>
+                </div>
+                <div class="product">
+                  <img src="images/Enalapril.jpg" alt="Enalapril" width="200" height="300">
+                  <p>A tablet - Rs. 87.05</p>
+                  <label for="quantity-enalapril">Quantity:</label>
+                  <input type="number" id="quantity-enalapril" min="1" value="1">
+                  <br>
+                  <button onclick="addToCart('Enalapril', 87.05, document.getElementById('quantity-enalapril').value)">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+          </section>
+      
+          <section id="cart">
+            <h2>Shopping Cart</h2>
+            <table id="cart-table">
+              <thead>
+                <tr>
+                  <th>Item</th>
+                  <th>Quantity</th>
+                  <th>Price</th>
+                </tr>
+              </thead>
+              <tbody id="cart-items">
+                <!-- Items added dynamically -->
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td colspan="2">Total</td>
+                  <td id="total-price">Rs. 0</td>
+                </tr>
+              </tfoot>
+            </table>
+            <button onclick="proceedToOrder()">Buy Now</button>
+          </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-left">
+                <div class="logo-description">
+                    <img src="images/logo.jpg" alt="logo" class="logo">
+                    <div class="description">
+                        <p>Our unwavering commitment to compassionate patient care, innovation & outstanding patient 
+                            outcomes has earned us the position of trust we enjoy. With a focus on personalized care and 
+                            attention to detail, we strive to exceed the expectations of our patients.
+                        </p>
+                    </div>
+                </div>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <img src="images/address.png" alt="address" class="icon">
+                        <p>No. 241/B, Michelle Rd, Colombo</p>
+                    </div>
+                    <div class="contact-item">
+                        <img src="images/gmail.jpg" alt="gmail" class="icon">
+                        <p>Lifecare@gmail.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <img src="images/contact.jpg" alt="contact" class="icon">
+                        <p>011-2471889</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-right">
+                <h2>Quick Links</h2>
+                <div class="quick-links">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="About_us.html">About us</a></li>
+                        <li><a href="Services.html">Services</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="Doctors.html">Doctors</a></li>
+                        <li><a href="Consulting_reservation.html">Consulting reservation</a></li>
+                        <li><a href="Pharmacy.html">Pharmacy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
